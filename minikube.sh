@@ -6,6 +6,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube config set driver docker
 sudo snap install kubectl --classic
 minikube start --insecure-registry "10.0.0.0/24"
+echo 'alias k="kubectl"' >> /home/ubuntu/.bashrc
 
 #Configure Docker registry in Minikube
 minikube addons enable registry
