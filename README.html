@@ -189,7 +189,7 @@
 <ul>
 <li>Kubernetes (helmsman) &quot;Rorsman&quot;</li>
 <li>Orkestrerar container via container runtime t.ex. Docker</li>
-<li>deploy | scale | heal</li>
+<li>scheduling | scaling | healing | updating</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
@@ -202,7 +202,7 @@
 }
 ;">
 <h1>Google - containers</h1>
-<p><img src="./images/google_container.png" alt="center" style="height:400px;" /></p>
+<p><img src="./images/google_container.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -214,7 +214,7 @@
 }
 ;">
 <h1>Omega / Borg</h1>
-<p><img src="./images/borg_omega.png" alt="center" style="height:400px;" /></p>
+<p><img src="./images/borg_omega.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -226,7 +226,7 @@
 }
 ;">
 <h1>Cloud Native Opensource</h1>
-<p><img src="./images/cloud_native_k8s.png" alt="center" style="height:400px;" /></p>
+<p><img src="./images/cloud_native_k8s.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -237,11 +237,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Installera Minikube</h1>
-<p><code>cat minikube.sh</code><br />
-<code>cd knowit-kubernetes-kurs</code><br />
-<code>sudo chmod +x minikube.sh</code><br />
-<code>./minikube.sh</code></p>
+<h1>SSH till er AWS instans</h1>
+<p><code>ssh -i ~/.ssh/aws-linux-demo.pem ubuntu@ubuntu@ec2-16-171-26-141.eu-north-1.compute.amazonaws.com</code></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -252,9 +249,11 @@
   margin: 0 auto;
 }
 ;">
-<h1>Bygg en Docker containerimage från Dockerfile</h1>
-<p>Kör kommandot <code>docker build -t docker-demo-app .</code></p>
-<p>Docker kommer att per default att leta efter Dockerfile. Om du vill specificera filen kör då kommandot <code>docker build -f Dockerfile -t docker-demo-app .</code></p>
+<h1>Installera Minikube</h1>
+<p><code>cd knowit-kubernetes-kurs</code><br />
+<code>cat minikube.sh</code><br />
+<code>sudo chmod +x minikube.sh</code><br />
+<code>./minikube.sh</code></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -265,8 +264,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Kör igång Docker container</h1>
-<p>Använd kommandot <code>docker run -d -p 8080:80 docker-demo-app</code></p>
+<h1>Kubernetes vs Docker</h1>
+<p><img src="./images/Kubernetes_Docker.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -277,8 +276,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Visa alla containrar som körs</h1>
-<p>Använd kommandot <code>docker ps -a</code></p>
+<h1>Control plane / Worker nodes</h1>
+<p><img src="./images/Controlplane_workers.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -289,8 +288,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Gör ett testanrop till docker-demo-app containern</h1>
-<p>Använd kommandot <code>curl localhost:8080</code></p>
+<h1>Webbapplikation</h1>
+<p><img src="./images/Nginx_DB.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -301,8 +300,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Stoppa docker-demo-app containern</h1>
-<p>Använd kommandot <code>docker stop &lt;container-id&gt;</code></p>
+<h1>Kubernetes deployment</h1>
+<p><img src="./images/High_cpu.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -313,8 +312,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Rensa alla stoppade containrar</h1>
-<p>Använd kommandot <code>docker system prune</code> och svara <code>ja</code> för att bekräfta</p>
+<h1>Auto scaling</h1>
+<p><img src="./images/Scale_up.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -325,8 +324,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Ladda ned container image från Dockerhub</h1>
-<p>Använd kommandot <code>docker pull busybox</code></p>
+<h1>Auto healing</h1>
+<p><img src="./images/Autoheal.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -337,8 +336,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Visa alla container images som finns sparat lokalt</h1>
-<p>Använd kommandot <code>docker images</code></p>
+<h1>Auto healing</h1>
+<p><img src="./images/Autoheal2.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -349,8 +348,8 @@
   margin: 0 auto;
 }
 ;">
-<h1>Ta bort container image som finns sparat lokalt</h1>
-<p>Använd kommandot <code>docker rmi &lt;imageid&gt;</code></p>
+<h1>Cloud ready</h1>
+<p><img src="./images/Multicloud.png" alt="center" style="height:500px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
@@ -361,14 +360,216 @@
   margin: 0 auto;
 }
 ;">
-<h1>Övningar:</h1>
-<ol>
-<li>Starta container imagen bkimminich/juice-shop som lyssnar på port 3000.</li>
-<li>Testa att containern bkimminich/juice-shop körs.</li>
-<li>Stoppa containern som du startade i steg 1.</li>
-</ol>
+<h1>DEMO</h1>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>PAUS</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>HANDS ON</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Lista alla namespaces</h1>
+<p>Använd kommandot <code>kubectl get ns</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Lista alla nodes</h1>
+<p>Använd kommandot <code>kubectl get nodes</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Lista alla pods</h1>
+<p>Använd kommandot <code>kubectl get pods</code></p>
+<p><code>kubectl get pods -n kube-system</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Kör en deploy med Nginx</h1>
+<p>Kör kommandot <code>kubectl create deployment nginx-deploy --image=nginx</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Lista deployment</h1>
+<p>Använd kommandot <code>kubectl get deployment</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Exponera deployment genom att skapa en service</h1>
+<p>Kör kommandot <code>kubectl expose deployment nginx-deploy --port=8080</code><br />
+<code>kubectl get svc nginx-deploy</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Ändra targetPort till 80 och type: NodePort</h1>
+<p><code>kubectl edit svc nginx-deploy</code><br />
+<code>i</code> för Insert mode<br />
+Ändra targetPort till 80. Ändra type: ClusterIP till type: NodePort.<br />
+<code>ESC</code> och sedan <code>:wq!</code> för att spara och gå ut</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Skapa en proxy till klustret</h1>
+<p>Använd kommandot <code>minikube service nginx-deploy</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Testa göra anrop till den nya deployment</h1>
+<p>Kör kommandot <code>curl &lt;http://proxy-ip:port&gt;</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Skala upp deployment</h1>
+<p>Använd kommandot <code>kubectl scale deployment nginx-deploy --replicas=10</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Skala ned deployment</h1>
+<p>Använd kommandot <code>kubectl scale deploment nginx-deploy --replicas=2</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Ta bort en pod</h1>
+<p>Kör kommandot <code>kubectl get pods</code><br />
+Använd kommandot <code>kubectl delete po &lt;podnamn&gt;</code> för att ta bort en pod.<br />
+Kör kommandot <code>kubectl get pods</code> igen för att se vad som hänt med poden.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Ta bort service och deployment</h1>
+<p>Använd kommandot <code>kubectl delete svc nginx-deploy</code><br />
+<code>kubectl delete deployment nginx-deploy</code><br />
+<code>kubectl get svc</code> och <code>kubectl get deployment</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+" style="--theme:default;--style:img[alt~=&quot;center&quot;] {
+  display: block;
+  margin: 0 auto;
+}
+;">
+<h1>Övningar:</h1>
+<ol>
+<li>Skapa och kör en deployment som får heta apache-deployment med imagen &quot;httpd&quot;.</li>
+<li>Exponera den nya deployment på port 8080. Editera servicen så att den får targetPort 80. Ändra från type: ClusterIP till type: NodePort.</li>
+<li>Skapa en proxy till klustret med kommandot <code>minikube service apache-deployment</code></li>
+<li>Testa att göra anrop till proxyadressen.</li>
+<li>Skala upp deployment till 5 replicas</li>
+<li>Skala ned depolyment till 2 replicas</li>
+<li>Ta bort de skapade servicen och deployment.</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
   margin: 0 auto;
 }
@@ -380,7 +581,7 @@
 <h1>Avslut och utvärdering:</h1>
 <p>Mentimeter - gå till <a href="http://menti.com">menti.com</a> och ange koden: 2179 658</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-theme="default" data-style="img[alt~=&quot;center&quot;] {
   display: block;
   margin: 0 auto;
 }

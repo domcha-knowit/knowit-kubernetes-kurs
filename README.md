@@ -69,24 +69,24 @@ Mentimeter - gå till menti.com och ange koden: 4241 7027
 
 - Kubernetes (helmsman) "Rorsman" 
 - Orkestrerar container via container runtime t.ex. Docker
-- deploy | scale | heal
+- scheduling | scaling | healing | updating
 
 ---
 
 # Google - containers
-![h:400px center](./images/google_container.png)
+![h:500px center](./images/google_container.png)
 
 
 ---
 
 # Omega / Borg
-![h:400px center](./images/borg_omega.png)
+![h:500px center](./images/borg_omega.png)
 
 
 ---
 
 # Cloud Native Opensource
-![h:400px center](./images/cloud_native_k8s.png)
+![h:500px center](./images/cloud_native_k8s.png)
 
 ---
 
@@ -102,6 +102,58 @@ Mentimeter - gå till menti.com och ange koden: 4241 7027
 `cat minikube.sh`
 `sudo chmod +x minikube.sh`
 `./minikube.sh`
+
+---
+
+# Kubernetes vs Docker
+![h:500px center](./images/Kubernetes_Docker.png)
+
+---
+
+# Control plane / Worker nodes
+![h:500px center](./images/Controlplane_workers.png)
+
+----
+
+# Webbapplikation
+![h:500px center](./images/Nginx_DB.png)
+
+----
+
+# Kubernetes deployment
+![h:500px center](./images/High_cpu.png)
+
+---
+
+# Auto scaling
+![h:500px center](./images/Scale_up.png)
+
+---
+
+# Auto healing
+![h:500px center](./images/Autoheal.png)
+
+---
+
+# Auto healing
+![h:500px center](./images/Autoheal2.png)
+
+---
+
+# Cloud ready
+![h:500px center](./images/Multicloud.png)
+
+---
+
+# DEMO
+
+---
+
+# PAUS
+
+---
+
+# HANDS ON
 
 ---
 
@@ -144,23 +196,24 @@ Kör kommandot `kubectl expose deployment nginx-deploy --port=8080`
 
 ---
 
-# Ändra targetPort till 80
+# Ändra targetPort till 80 och type: NodePort
 
 `kubectl edit svc nginx-deploy`
 `i` för Insert mode
+Ändra targetPort till 80. Ändra type: ClusterIP till type: NodePort.
 `ESC` och sedan `:wq!` för att spara och gå ut
 
 ---
 
 # Skapa en proxy till klustret
 
-Använd kommandot ``
+Använd kommandot `minikube service nginx-deploy`
 
 ---
 
 # Testa göra anrop till den nya deployment
 
-Kör kommandot `curl localhost:8080`
+Kör kommandot `curl <http://proxy-ip:port>`
 
 ---
 
@@ -172,15 +225,17 @@ Använd kommandot `kubectl scale deployment nginx-deploy --replicas=10`
 
 # Skala ned deployment
 
-Använd kommandot `kubectl scale deploment nginx-deploy --replicas=2`
+Använd kommandot `kubectl scale deploment nginx-deploy --replicas=5`
 
 ---
 
-# Ta bort en pod
+# Ta bort en eller flera podar
 
 Kör kommandot `kubectl get pods`
 Använd kommandot `kubectl delete po <podnamn>` för att ta bort en pod.
 Kör kommandot `kubectl get pods` igen för att se vad som hänt med poden.
+Kör kommandot `kubectl delete po --all`. Alla podar tas bort.
+Kör kommandot `kubectl get pods`. Vad händer med podarna.
 
 ---
 
@@ -206,6 +261,6 @@ Använd kommandot `kubectl delete svc nginx-deploy`
 
 # Avslut och utvärdering:
 
-Mentimeter - gå till menti.com och ange koden: 2179 658 
+Mentimeter - gå till menti.com och ange koden: 2862 2580 
 
 ---
