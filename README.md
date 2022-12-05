@@ -162,7 +162,6 @@ Använd kommandot ``
 
 Kör kommandot `curl localhost:8080`
 
-
 ---
 
 # Skala upp deployment
@@ -177,14 +176,30 @@ Använd kommandot `kubectl scale deploment nginx-deploy --replicas=2`
 
 ---
 
-#
+# Ta bort en pod
+
+Kör kommandot `kubectl get pods`
+Använd kommandot `kubectl delete po <podnamn>` för att ta bort en pod.
+Kör kommandot `kubectl get pods` igen för att se vad som hänt med poden.
+
+---
+
+# Ta bort service och deployment
+
+Använd kommandot `kubectl delete svc nginx-deploy`
+`kubectl delete deployment nginx-deploy`
+`kubectl get svc` och `kubectl get deployment`
 
 ---
 
 # Övningar:
-1. Starta container imagen bkimminich/juice-shop som lyssnar på port 3000.
-2. Testa att containern bkimminich/juice-shop körs.
-3. Stoppa containern som du startade i steg 1.
+1. Skapa och kör en deployment som får heta apache-deployment med imagen "httpd".
+2. Exponera den nya deployment på port 8080. Editera servicen så att den får targetPort 80. Ändra från type: ClusterIP till type: NodePort.
+3. Skapa en proxy till klustret med kommandot `minikube service apache-deployment` 
+4. Testa att göra anrop till proxyadressen.
+5. Skala upp deployment till 5 replicas
+6. Skala ned depolyment till 2 replicas
+7. Ta bort de skapade servicen och deployment.
 
 ---
 
