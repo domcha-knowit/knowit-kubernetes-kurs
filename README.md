@@ -27,33 +27,33 @@ Mentimeter - gå till menti.com och ange koden: 4241 7027
 
 ---
 
-| Deltagare 	| AWS host	|
-|-----------	|----------	|
-| Azeb      	|       	|
-| Dennis    	|  	|
-| Erik      	|  	|
-| Emelie    	|  	|
-| Johan B   	|  	|
-| Johan Å   	|  	|
-| Jonathan  	|  	|
-| Patrik    	| 	|
-| Simon     	|  	|
-| Sofie     	|  	|
-| Louise B  	|  	|
-| Louise J  	|  	|
-| Josefine  	|  	|
-| Emil Ö    	|  	|
-| Emil T    	|  	|
-| Olof      	| 	|
-| Frida     	|  	|
-| Jennifer  	|  	|
-| John      	| 	|
-| Extra 1   	|  	|
-| Extra 2   	| 	|
-| Extra 3   	| 	|
-| Extra 4   	| 	|
-| Extra 5   	| 	|
-| Extra 6   	| 	|
+| Namn     | AWS hostname                                        |
+|----------|-----------------------------------------------------|
+| Azeb     | ec2-16-170-222-98.eu-north-1.compute.amazonaws.com  |
+| Dennis   | ec2-13-48-126-169.eu-north-1.compute.amazonaws.com  |
+| Erik     | ec2-13-49-159-7.eu-north-1.compute.amazonaws.com    |
+| Emelie   | ec2-13-50-17-29.eu-north-1.compute.amazonaws.com    |
+| Johan B  | ec2-13-49-158-38.eu-north-1.compute.amazonaws.com   |
+| Johan Å  | ec2-16-170-37-234.eu-north-1.compute.amazonaws.com  |
+| Jonathan | ec2-13-51-36-156.eu-north-1.compute.amazonaws.com   |
+| Patrik   | ec2-13-50-106-108.eu-north-1.compute.amazonaws.com  |
+| Simon    | ec2-16-170-108-26.eu-north-1.compute.amazonaws.com  |
+| Sofie    | ec2-13-50-14-227.eu-north-1.compute.amazonaws.com   |
+| Louise B | ec2-13-51-44-60.eu-north-1.compute.amazonaws.com    |
+| Louise J | ec2-13-50-15-99.eu-north-1.compute.amazonaws.com    |
+| Josefine | ec2-13-48-124-85.eu-north-1.compute.amazonaws.com   |
+| Emil Ö   | ec2-16-171-53-167.eu-north-1.compute.amazonaws.com  |
+| Emil T   | ec2-13-53-136-42.eu-north-1.compute.amazonaws.com   |
+| Olof     | ec2-13-49-148-31.eu-north-1.compute.amazonaws.com   |
+| Frida    | ec2-16-171-46-218.eu-north-1.compute.amazonaws.com  |
+| Jennifer | ec2-13-50-13-110.eu-north-1.compute.amazonaws.com   |
+| John     | ec2-13-50-100-167.eu-north-1.compute.amazonaws.com  |
+| Extra 1  | ec2-13-49-138-134.eu-north-1.compute.amazonaws.com  |
+| Extra 2  | ec2-16-171-45-229.eu-north-1.compute.amazonaws.com  |
+| Extra 3  | ec2-13-53-194-64.eu-north-1.compute.amazonaws.com   |
+| Extra 4  | ec2-13-50-106-230.eu-north-1.compute.amazonaws.com  |
+| Extra 5  | ec2-16-170-166-189.eu-north-1.compute.amazonaws.com |
+| Extra 6  | ec2-13-49-125-91.eu-north-1.compute.amazonaws.com   |
 
 ---
 
